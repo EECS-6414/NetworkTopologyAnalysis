@@ -1,0 +1,15 @@
+Name: Topological Network Analysis
+Type: Graph
+Number of nodes: 353
+Number of edges: 640
+Average degree:   3.6261
+Network density: 0.010301313417460727top 10 Apps:('Google Photos', 86)
+('Google Duo - High Quality Video Calls', 71)
+('Google Play Music', 35)
+('Candy Crush Soda Saga', 25)
+('A A', 24)
+('A M', 24)
+('A J', 21)
+('A B', 20)
+('Castle Clash: Heroes of the Empire US', 19)
+('Mini Militia - Doodle Army 2', 18)

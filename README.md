@@ -15,16 +15,16 @@ This script takes around 12 minutes to run. You need to have the Sentiment CSV f
 In order to execute this script and have the network `G`, just execute the `main()` function as it is.
 
 ## Results
-Name: Topological Network Analysis
-Type: Graph
-Number of nodes: 463387
-Number of edges: 1105531
-Average degree:   4.7715
-Network density: 1.0297081884469975e-05
-Node degree average APP: 2024.7857142857142
-Node degree average Author: 2.388571885377484
+- Name: Topological Network Analysis
+- Type: Graph
+- Number of nodes: 463387
+- Number of edges: 1105531
+- Average degree:   4.7715
+- Network density: 1.0297081884469975e-05
+- Node degree average APP: 2024.7857142857142
+- Node degree average Author: 2.388571885377484
 
-Top 10 Authors:
+- Top 10 Authors:
 ('Lim Yen Ping', 24)
 ('Emanuel Seuneke', 23)
 ('Rhonda Paschal', 22)
@@ -36,7 +36,7 @@ Top 10 Authors:
 ('Andri Untoro', 17)
 ('William Howard', 17)
 
-Top 10 Apps:
+- Top 10 Apps:
 ('Google Photos', 178780)
 ('Google Duo - High Quality Video Calls', 119191)
 ('Candy Crush Soda Saga', 64660)

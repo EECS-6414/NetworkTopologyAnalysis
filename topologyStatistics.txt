@@ -1,31 +1,31 @@
 Name: Topological Network Analysis
 Type: Graph
-Number of nodes: 524121
-Number of edges: 1445198
-Average degree:   5.5147
-Network density: 1.0521921423928536e-05Google Photos - 226738John Smith - 83
-Node degree av. APP: 2878.8844621513945
-Node degree av. Author: 2.7600144379787594
+Number of nodes: 463343
+Number of edges: 1105361
+Average degree:   4.7712
+Network density: 1.0297453937105857e-05Google Photos - 178780Lim Yen Ping - 24
+Node degree av. APP: 2201.9183266932273
+Node degree av. Author: 2.388204588616825
 Top 10 Authors:
-('John Smith', 83)
-('John Doe', 72)
-('Deepak Kumar', 70)
-('Praveen Kumar', 69)
-('Anil Kumar', 67)
-('Imran Khan', 63)
-('Sunil Kumar', 60)
-('Vijay Kumar', 60)
-('Ashok Kumar', 59)
-('Rahul Kumar', 59)
+('Lim Yen Ping', 24)
+('Emanuel Seuneke', 22)
+('Rhonda Paschal', 22)
+('Filipe Governa', 20)
+('Janko Kinčeš', 18)
+('Christina Reed', 18)
+('Josh Clark', 17)
+('Samuel Smith', 17)
+('Andri Untoro', 17)
+('William Howard', 17)
 
 Top 10 Apps:
-('Google Photos', 226738)
-('Google Duo - High Quality Video Calls', 157604)
-('Candy Crush Soda Saga', 84465)
-('Google Play Music', 76268)
-('Candy Crush Saga', 66563)
-('Mini Militia - Doodle Army 2', 65188)
-('MX Player', 34834)
-('Candy Crush Jelly Saga', 34691)
-('Castle Clash: Heroes of the Empire US', 33314)
-('Google Docs', 25997)
+('Google Photos', 178780)
+('Google Duo - High Quality Video Calls', 119191)
+('Candy Crush Soda Saga', 64660)
+('Google Play Music', 59607)
+('Candy Crush Saga', 49712)
+('Mini Militia - Doodle Army 2', 44805)
+('Candy Crush Jelly Saga', 27572)
+('Castle Clash: Heroes of the Empire US', 25430)
+('MX Player', 24602)
+('Google Docs', 20272)

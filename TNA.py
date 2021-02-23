@@ -195,7 +195,7 @@ def TNAfunc(path, names):
     colors = nx.get_edge_attributes(G, 'color').values()
 
     print("Graph completed!")
-    printHistograms(G)
+    #printHistograms(G)
 
 
 

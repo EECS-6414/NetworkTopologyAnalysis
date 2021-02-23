@@ -74,6 +74,7 @@ def TNAfunc(path, names):
             count+=1
         else:
             authListHash[aVal1] = aVal2, aVal3, aVal4
+    authListHash.pop('Boonk Gang') #bugfix (app = author)
     print("Repeated names of authors: "+str(count))
 
 
@@ -146,6 +147,7 @@ def TNAfunc(path, names):
             else:
                 print("removing node: "+str(k)+" value: "+str(v))
                 G.remove_node(k)
+                authListHash2.pop(k)
     degreeOfApp = sorted(degreeOfApp.items(), key=lambda x: x[1], reverse=True)
     degreeOfAuthors = sorted(degreeOfAuthors.items(), key=lambda x: x[1], reverse=True)
 
@@ -174,7 +176,7 @@ def TNAfunc(path, names):
     topologyStatisticsFile.write("\nNumber of apps:"+str(len(listWithAllAppsHash)))
     topologyStatisticsFile.write("\nNumber of Authors:"+str(len(authListHash2)))
     topologyStatisticsFile.write("\nTop 10 Authors:\n")
-    for v in range(10):
+    for v in range(0, 10):
         topologyStatisticsFile.write(str(degreeOfAuthors[v])+"\n")
 
     nx.set_node_attributes(G, degree_dict, 'degree')
@@ -193,7 +195,7 @@ def TNAfunc(path, names):
     colors = nx.get_edge_attributes(G, 'color').values()
 
     print("Graph completed!")
-    #printHistograms(G)
+    printHistograms(G)
 
 
 

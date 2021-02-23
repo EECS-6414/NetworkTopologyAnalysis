@@ -24,11 +24,11 @@ def generateDegreeHistogram(G, key):
     """
 
     global counts
-    color = nx.get_node_attributes(G, "type")
+    attributes = nx.get_node_attributes(G, "type")
 
     degreeDistribution = []
     for n, d in G.degree():
-        if color[n] == key:
+        if attributes[n] == key:
             degreeDistribution.append(d)
 
     counts = Counter(d for d in degreeDistribution)

@@ -1,13 +1,13 @@
 Name: Topological Network Analysis
 Type: Graph
-Number of nodes: 462604
-Number of edges: 1153088
-Average degree:   4.9852
-Network density: 1.0776422740293287e-05Google Photos - 178780Lim Yen Ping - 26
-Node degree av. APP: 2266.8487229862476
-Node degree av. Author: 2.495344030989299
-Number of apps:509
-Number of Authors:462842
+Number of nodes: 463194
+Number of edges: 1154633
+Average degree:   4.9855
+Network density: 1.0763389306000118e-05Google Photos - 178780Lim Yen Ping - 26
+Node degree av. APP: 2255.435546875
+Node degree av. Author: 2.4955217622470727
+Number of apps:512
+Number of Authors:462682
 Top 10 Authors:
 ('Lim Yen Ping', 26)
 ('Emanuel Seuneke', 22)
@@ -21,13 +21,13 @@ Top 10 Authors:
 ('Josh Clark', 17)
 
 Top 10 Apps:
-('Google Photos', 178623)
-('Google Duo - High Quality Video Calls', 119119)
-('Candy Crush Soda Saga', 64605)
-('Google Play Music', 59575)
-('Candy Crush Saga', 49683)
-('Mini Militia - Doodle Army 2', 44798)
-('Candy Crush Jelly Saga', 27564)
-('Castle Clash: Heroes of the Empire US', 25397)
-('MX Player', 24599)
-('Google Docs', 20256)
+('Google Photos', 178753)
+('Google Duo - High Quality Video Calls', 119171)
+('Candy Crush Soda Saga', 64653)
+('Google Play Music', 59597)
+('Candy Crush Saga', 49710)
+('Mini Militia - Doodle Army 2', 44799)
+('Candy Crush Jelly Saga', 27571)
+('Castle Clash: Heroes of the Empire US', 25425)
+('MX Player', 24601)
+('Google Docs', 20269)

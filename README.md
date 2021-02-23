@@ -1,7 +1,7 @@
 ## Network 
 This network is based on two files:
-1. **frequency.csv**: This file contains the reviews of 523,620 with at least 2 reviews. The real number after preprocessing, however, is 462,842 authors.
-2. **apps_names**: It has the 546 app's names
+1. **frequency.csv**: This file contains the reviews of 523,620 with at least 2 reviews. The real number after preprocessing, however, is 462,682 authors.
+2. **apps_names**: It has the 546 app's names (only 512 were taken into account)
 
 ### Sentiment 
 The edge of this network is the sentiment prediction: red for negative, blue for positive and black for neutral. The red nodes is the app and the blue is autrors.
@@ -17,36 +17,37 @@ In order to execute this script and have the network `G`, just execute the `main
 ## Results
 - Name: Topological Network Analysis
 - Type: Graph
-- Number of nodes: 463387
-- Number of edges: 1105531
-- Average degree:   4.7715
-- Network density: 1.0297081884469975e-05
-- Node degree average APP: 2024.7857142857142
-- Node degree average Author: 2.388571885377484
-
+- Number of nodes: 463194
+- Number of edges: 1154633
+- Average degree:   4.9855
+- Network density: 1.0763389306000118e-05
+- Node degree average APP: 2255.435546875
+- Node degree average Author: 2.4955217622470727
+- Number of apps: 512
+- Number of Authors: 462682
 - Top 10 Authors:
-('Lim Yen Ping', 24)
-('Emanuel Seuneke', 23)
+('Lim Yen Ping', 26)
+('Emanuel Seuneke', 22)
 ('Rhonda Paschal', 22)
 ('Filipe Governa', 20)
+('Andri Untoro', 19)
 ('Janko Kinčeš', 18)
+('Edgar Rojas', 18)
+('Saman Kianfar', 18)
 ('Christina Reed', 18)
 ('Josh Clark', 17)
-('Samuel Smith', 17)
-('Andri Untoro', 17)
-('William Howard', 17)
 
 - Top 10 Apps:
-('Google Photos', 178780)
-('Google Duo - High Quality Video Calls', 119191)
-('Candy Crush Soda Saga', 64660)
-('Google Play Music', 59607)
-('Candy Crush Saga', 49712)
-('Mini Militia - Doodle Army 2', 44805)
-('Candy Crush Jelly Saga', 27572)
-('Castle Clash: Heroes of the Empire US', 25430)
-('MX Player', 24602)
-('Google Docs', 20272)
+('Google Photos', 178753)
+('Google Duo - High Quality Video Calls', 119171)
+('Candy Crush Soda Saga', 64653)
+('Google Play Music', 59597)
+('Candy Crush Saga', 49710)
+('Mini Militia - Doodle Army 2', 44799)
+('Candy Crush Jelly Saga', 27571)
+('Castle Clash: Heroes of the Empire US', 25425)
+('MX Player', 24601)
+('Google Docs', 20269)
 
 ### Degree distribution
 <div>

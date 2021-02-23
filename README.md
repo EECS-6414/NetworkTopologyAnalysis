@@ -47,3 +47,11 @@ In order to execute this script and have the network `G`, just execute the `main
 ('Castle Clash: Heroes of the Empire US', 25430)
 ('MX Player', 24602)
 ('Google Docs', 20272)
+
+### Degree distribution
+<div>
+<img src="degree/histogram_app.jpg" width="400px"</img> 
+</div>
+<div>
+<img src="degree/histogram_author.jpg" width="400px"</img> 
+</div>

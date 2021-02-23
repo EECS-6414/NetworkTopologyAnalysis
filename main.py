@@ -4,7 +4,8 @@ from fixSentiments import fixSentimentFiles
 
 
 def main():
-    mainPath = '/Users/jaime/Documents/York_University/Winter_2021/Data_Vizualization/Project/gitlab/datasets/sentiment'
+    mainPath = '/Users/jaime/Documents/York_University/Winter_2021/data_vizualization/project/gitlab/datasets/sentiment'
+    #mainPath = '/Users/jaime/Documents/York_University/Winter_2021/data_vizualization/project/Sentiment'
     names = files(mainPath)
 
     # for cleaning the reviews

@@ -1,31 +1,33 @@
 Name: Topological Network Analysis
 Type: Graph
-Number of nodes: 463343
-Number of edges: 1105361
-Average degree:   4.7712
-Network density: 1.0297453937105857e-05Google Photos - 178780Lim Yen Ping - 24
-Node degree av. APP: 2201.9183266932273
-Node degree av. Author: 2.388204588616825
+Number of nodes: 462604
+Number of edges: 1153088
+Average degree:   4.9852
+Network density: 1.0776422740293287e-05Google Photos - 178780Lim Yen Ping - 26
+Node degree av. APP: 2266.8487229862476
+Node degree av. Author: 2.495344030989299
+Number of apps:509
+Number of Authors:462842
 Top 10 Authors:
-('Lim Yen Ping', 24)
+('Lim Yen Ping', 26)
 ('Emanuel Seuneke', 22)
 ('Rhonda Paschal', 22)
 ('Filipe Governa', 20)
+('Andri Untoro', 19)
 ('Janko Kinčeš', 18)
+('Edgar Rojas', 18)
+('Saman Kianfar', 18)
 ('Christina Reed', 18)
 ('Josh Clark', 17)
-('Samuel Smith', 17)
-('Andri Untoro', 17)
-('William Howard', 17)
 
 Top 10 Apps:
-('Google Photos', 178780)
-('Google Duo - High Quality Video Calls', 119191)
-('Candy Crush Soda Saga', 64660)
-('Google Play Music', 59607)
-('Candy Crush Saga', 49712)
-('Mini Militia - Doodle Army 2', 44805)
-('Candy Crush Jelly Saga', 27572)
-('Castle Clash: Heroes of the Empire US', 25430)
-('MX Player', 24602)
-('Google Docs', 20272)
+('Google Photos', 178623)
+('Google Duo - High Quality Video Calls', 119119)
+('Candy Crush Soda Saga', 64605)
+('Google Play Music', 59575)
+('Candy Crush Saga', 49683)
+('Mini Militia - Doodle Army 2', 44798)
+('Candy Crush Jelly Saga', 27564)
+('Castle Clash: Heroes of the Empire US', 25397)
+('MX Player', 24599)
+('Google Docs', 20256)

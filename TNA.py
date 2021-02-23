@@ -4,6 +4,8 @@ import networkx as nx
 import pandas as pd
 import matplotlib.lines as mlines
 from operator import itemgetter
+
+from degree.printCharts import printHistograms
 from fileNames import files
 from statistics import mean
 
@@ -111,8 +113,8 @@ def TNAfunc(path, names):
     G.name = "Topological Network Analysis"
 
     # Add author list and apps list
-    G.add_nodes_from(listWithAllAppsHash.keys())
-    G.add_nodes_from(authListHash2.keys())
+    G.add_nodes_from(listWithAllAppsHash.keys(), type="app")
+    G.add_nodes_from(authListHash2.keys(), type="author")
 
     # Add edge between every author and every app they commented on
     print("building network (9 min)...")
@@ -131,23 +133,31 @@ def TNAfunc(path, names):
                 listWithAllAppsHash[k] += 1
 
 
-    # Print statistical information
-    print(nx.info(G))
-    topologyStatisticsFile.write(str(nx.info(G))+"\n")
-    density = nx.density(G)
-    print("Network density:", density)
-    topologyStatisticsFile.write("Network density: "+str(density))
-    degree_dict = dict(G.degree(G.nodes()))
     print("Extracting degree...")
     degreeOfApp = {}
     degreeOfAuthors = {}
+    degree_dict = dict(G.degree(G.nodes()))
     for k, v in degree_dict.items():
         if k in listWithAllAppsHash:
             degreeOfApp[k] = v
         else:
-            degreeOfAuthors[k] = v
+            if v > 1:
+                degreeOfAuthors[k] = v
+            else:
+                print("removing node: "+str(k)+" value: "+str(v))
+                G.remove_node(k)
     degreeOfApp = sorted(degreeOfApp.items(), key=lambda x: x[1], reverse=True)
     degreeOfAuthors = sorted(degreeOfAuthors.items(), key=lambda x: x[1], reverse=True)
+
+    # Print statistical information
+    print(nx.info(G))
+    topologyStatisticsFile.write(str(nx.info(G)) + "\n")
+    density = nx.density(G)
+    print("Network density:", density)
+    topologyStatisticsFile.write("Network density: " + str(density))
+    degree_dict = dict(G.degree(G.nodes()))
+    # remove invalid authors with zero reviews
+
     appHighestDegree = str(list(degreeOfApp[0])[0]) + " - " + str(list(degreeOfApp[0])[1])
     authorHighestDegree = str(list(degreeOfAuthors[0])[0]) + " - " + str(list(degreeOfAuthors[0])[1])
     topologyStatisticsFile.write(appHighestDegree)
@@ -161,6 +171,8 @@ def TNAfunc(path, names):
     for v in degreeOfAuthors:
         count += v[1]
     topologyStatisticsFile.write("\nNode degree av. Author: "+str(count/len(degreeOfAuthors)))
+    topologyStatisticsFile.write("\nNumber of apps:"+str(len(listWithAllAppsHash)))
+    topologyStatisticsFile.write("\nNumber of Authors:"+str(len(authListHash2)))
     topologyStatisticsFile.write("\nTop 10 Authors:\n")
     for v in range(10):
         topologyStatisticsFile.write(str(degreeOfAuthors[v])+"\n")
@@ -172,7 +184,6 @@ def TNAfunc(path, names):
     for d in sorted_degree[:10]:
         print(d)
         topologyStatisticsFile.write(str(d)+"\n")
-
     # Determine node size
     authWeight = []
     appWeight = [float(l)*50 for x,l in listWithAllAppsHash.items()]
@@ -182,6 +193,9 @@ def TNAfunc(path, names):
     colors = nx.get_edge_attributes(G, 'color').values()
 
     print("Graph completed!")
+    #printHistograms(G)
+
+
 
     # print("Map to layout (takes time)...")
     # # Map to layout

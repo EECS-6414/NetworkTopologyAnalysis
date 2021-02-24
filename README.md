@@ -56,3 +56,7 @@ In order to execute this script and have the network `G`, just execute the `main
 <div>
 <img src="degree/histogram_author.jpg" width="400px"</img> 
 </div>
+Power-law distribution over the app degree:
+<div>
+<img src="degree/power2.jpg" width="400px"</img> 
+</div>

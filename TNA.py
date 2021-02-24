@@ -74,7 +74,7 @@ def TNAfunc(path, names):
             count+=1
         else:
             authListHash[aVal1] = aVal2, aVal3, aVal4
-    authListHash.pop('Boonk Gang') #bugfix (app = author)
+#    authListHash.pop('Boonk Gang') #bugfix (app = author)
     print("Repeated names of authors: "+str(count))
 
 
@@ -188,10 +188,10 @@ def TNAfunc(path, names):
     topologyStatisticsFile.write("\nNumber of apps:"+str(len(listWithAllAppsHash)))
     topologyStatisticsFile.write("\nNumber of Authors:"+str(len(authListHash2)))
     topologyStatisticsFile.write("\nTop 10 Authors:\n")
-    for v in range(0, 10):
-        topologyStatisticsFile.write(str(degreeOfAuthors[v])+"\n")
-        print("\n"+str(degreeOfAuthors[v]))
-        print(str(authListHash2[str(degreeOfAuthors[v][0])])+"\n")
+    # for v in range(0, 10):
+    #     topologyStatisticsFile.write(str(degreeOfAuthors[v])+"\n")
+    #     print("\n"+str(degreeOfAuthors[v]))
+    #     print(str(authListHash2[str(degreeOfAuthors[v][0])])+"\n")
     nx.set_node_attributes(G, degree_dict, 'degree')
     sorted_degree = sorted(degree_dict.items(), key=itemgetter(1), reverse=True)
     print("Top 5 nodes by degree:")
@@ -208,8 +208,7 @@ def TNAfunc(path, names):
     colors = nx.get_edge_attributes(G, 'color').values()
 
     print("Graph completed!")
-    #printHistograms(G)
-
+    printHistograms(G)
 
 
     # print("Map to layout (takes time)...")

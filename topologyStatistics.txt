@@ -1,24 +1,14 @@
 Name: Topological Network Analysis
 Type: Graph
 Number of nodes: 463194
-Number of edges: 1154633
+Number of edges: 1154635
 Average degree:   4.9855
-Network density: 1.0763389306000118e-05Google Photos - 178780Lim Yen Ping - 26
-Node degree av. APP: 2255.435546875
+Network density: 1.0763407949827734e-05Google Photos - 178780Lim Yen Ping - 26
+Node degree av. APP: 2255.443359375
 Node degree av. Author: 2.4955217622470727
 Number of apps:512
-Number of Authors:462682
+Number of Authors:462683
 Top 10 Authors:
-('Lim Yen Ping', 26)
-('Emanuel Seuneke', 22)
-('Rhonda Paschal', 22)
-('Filipe Governa', 20)
-('Andri Untoro', 19)
-('Janko Kinčeš', 18)
-('Edgar Rojas', 18)
-('Saman Kianfar', 18)
-('Christina Reed', 18)
-('Josh Clark', 17)
 
 Top 10 Apps:
 ('Google Photos', 178753)

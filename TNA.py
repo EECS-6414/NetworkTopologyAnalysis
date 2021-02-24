@@ -90,8 +90,22 @@ def TNAfunc(path, names):
             print("couldn't read file")
         appSingleName = item[31:len(item)-4]
         for i in range(len(filePath)):
-            if authListHash.get(filePath['Author'][i])!=None:
+            if authListHash.get(filePath['Author'][i]) is not None:
                 try:
+                    splitId = authListHash2[filePath['Author'][i]][1].split(";")
+                    splitApp = authListHash2[filePath['Author'][i]][0]
+                    idValue = authListHash2[filePath['Author'][i]][1]
+                    idFrequency = authListHash2[filePath['Author'][i]][2]
+                    for j in range(len(splitId)):
+                        if splitId[j] == appSingleName:
+                            sentiment = 'k'
+                            if filePath['sentiment'][i] == 'negative':
+                                sentiment = 'r'
+                            elif filePath['sentiment'][i] == 'positive':
+                                sentiment = 'b'
+                            splitApp[j] = splitApp[j] + "!?$" + sentiment
+                            authListHash2[filePath['Author'][i]] = splitApp[0:len(splitApp)], idValue, idFrequency
+                except:
                     splitId = authListHash[filePath['Author'][i]][1].split(";")
                     splitApp = authListHash[filePath['Author'][i]][0].split(";")
                     idValue = authListHash[filePath['Author'][i]][1]
@@ -105,8 +119,6 @@ def TNAfunc(path, names):
                                 sentiment = 'b'
                             splitApp[j] = splitApp[j]+"!?$"+sentiment
                             authListHash2[filePath['Author'][i]] = splitApp[0:len(splitApp)], idValue, idFrequency
-                except:
-                    print("Error")
     print("number of authors: "+str(len(authListHash2)))
 
     # Create and name graph
@@ -129,7 +141,7 @@ def TNAfunc(path, names):
                             partsWeigh = value[0][n].split("!?$")
                             color = partsWeigh[1]
                         except:
-                            color = 'k';
+                            color = 'k'
                 G.add_edge(key, k, color=color)
                 listWithAllAppsHash[k] += 1
 
@@ -178,7 +190,8 @@ def TNAfunc(path, names):
     topologyStatisticsFile.write("\nTop 10 Authors:\n")
     for v in range(0, 10):
         topologyStatisticsFile.write(str(degreeOfAuthors[v])+"\n")
-
+        print("\n"+str(degreeOfAuthors[v]))
+        print(str(authListHash2[str(degreeOfAuthors[v][0])])+"\n")
     nx.set_node_attributes(G, degree_dict, 'degree')
     sorted_degree = sorted(degree_dict.items(), key=itemgetter(1), reverse=True)
     print("Top 5 nodes by degree:")

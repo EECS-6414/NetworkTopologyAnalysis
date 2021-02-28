@@ -58,5 +58,9 @@ In order to execute this script and have the network `G`, just execute the `main
 </div>
 Power-law distribution over the app degree:
 <div>
-<img src="degree/power2.jpg" width="400px"</img> 
+<img src="degree/power_app.jpg" width="400px"</img> 
+</div>
+Power-law distribution over the auth degree:
+<div>
+<img src="degree/power_auth.jpg" width="400px"</img> 
 </div>

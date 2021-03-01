@@ -21,8 +21,8 @@ In order to execute this script and have the network `G`, just execute the `main
 - Number of edges: 1154633
 - Average degree:   4.9855
 - Network density: 1.0763389306000118e-05
-- Node degree average APP: 2255.435546875
-- Node degree average Author: 2.4955217622470727
+- Node degree av. APP: 4510
+- Node degree av. Author: 4.99
 - Number of apps: 512
 - Number of Authors: 462682
 - Top 10 Authors:

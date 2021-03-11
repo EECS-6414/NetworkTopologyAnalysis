@@ -68,6 +68,7 @@ def FGAfunc():
             #if u in appList[k][0]:
                 #jc.remove(u)
 
+    #print(appList)
     #H.remove_edges_from(appList)
 
     widthVal = []
@@ -81,10 +82,10 @@ def FGAfunc():
         #print(sp)
         if sp > 0.0:
             #print(sp)
-            print("yes")
-            H.add_edge(u, v, weight=sp*10)
+            #print("yes!!!!!!!!!!!!!!!!")
+            H.add_edge(u, v, weight=sp*20)
 
-
+    H.remove_edges_from(appList)
 
     #for k in knn:
         #if k in authList[key][0]:
@@ -93,7 +94,12 @@ def FGAfunc():
 
     #print(o)
 
-    H.remove_edges_from(appList.edges)
+    #print(H.edges(appList[0]))
+
+    #for y, g in appList.items():
+        #H.remove_edge(H.edges(appList.keys()))
+
+    H.remove_nodes_from(appList.keys())
 
     #print(G.edges)
 
@@ -111,7 +117,7 @@ def FGAfunc():
         print(d)
 
     # Determine node size
-    appWeight = [float(l)*50 for x,l in appList.items()]
+    #appWeight = [float(l)*50 for x,l in appList.items()]
     #authWeight = [l for x,l in authList.items()]
     #print(authList.items())
     authWeight = [float(l[1])*50 for x,l in authList.items()]
@@ -122,7 +128,7 @@ def FGAfunc():
     # Map to layout
     pos = nx.spring_layout(H, k=0.25, iterations=70, scale=10)
     print(H.size())
-    plt.figure(3,figsize=(200,200))
+    plt.figure(1, figsize=(100,100))
 
 
     #print("yo = "+str(size(authList.keys())))

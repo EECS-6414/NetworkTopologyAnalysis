@@ -21,8 +21,8 @@ In order to execute this script and have the network `G`, just execute the `main
 - Number of edges: 1154633
 - Average degree:   4.9855
 - Network density: 1.0763389306000118e-05
-- Node degree average APP: 2255.435546875
-- Node degree average Author: 2.4955217622470727
+- Node degree av. APP: 4510
+- Node degree av. Author: 4.99
 - Number of apps: 512
 - Number of Authors: 462682
 - Top 10 Authors:
@@ -49,6 +49,18 @@ In order to execute this script and have the network `G`, just execute the `main
 ('MX Player', 24601)
 ('Google Docs', 20269)
 
+### 10 Apps for the time series analysis
+('Google Photos'	 178753)
+('Candy Crush Soda Saga'	 64653)
+('EA SPORTS UFC®'	 16818)
+('Adobe Photoshop Express:Photo Editor Collage Maker'	 14489)
+('Real Racing 3'	 13421)
+('Draw Something'	 6984)
+('Adobe Lightroom - Photo Editor'	 6975)
+('Draw Something Classic'	 6240)
+('Microsoft Office Lens - PDF Scanner'	 5493)
+('Flashlight: LED Light'	 2409)
+
 ### Degree distribution
 <div>
 <img src="degree/histogram_app.jpg" width="400px"</img> 
@@ -58,5 +70,9 @@ In order to execute this script and have the network `G`, just execute the `main
 </div>
 Power-law distribution over the app degree:
 <div>
-<img src="degree/power2.jpg" width="400px"</img> 
+<img src="degree/power_app.jpg" width="400px"</img> 
+</div>
+Power-law distribution over the auth degree:
+<div>
+<img src="degree/power_auth.jpg" width="400px"</img> 
 </div>

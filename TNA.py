@@ -170,7 +170,7 @@ def TNAfunc(path, names):
     print("Network density:", density)
     topologyStatisticsFile.write("Network density: " + str(density))
     degree_dict = dict(G.degree(G.nodes()))
-    # remove invalid authors with zero reviews
+#    remove invalid authors with zero reviews
 
     appHighestDegree = str(list(degreeOfApp[0])[0]) + " - " + str(list(degreeOfApp[0])[1])
     authorHighestDegree = str(list(degreeOfAuthors[0])[0]) + " - " + str(list(degreeOfAuthors[0])[1])
@@ -208,7 +208,7 @@ def TNAfunc(path, names):
     colors = nx.get_edge_attributes(G, 'color').values()
 
     print("Graph completed!")
-    #printHistograms(G)
+    printHistograms(G, authListHash2.keys(), listWithAllAppsHash.keys())
 
 
     # print("Map to layout (takes time)...")

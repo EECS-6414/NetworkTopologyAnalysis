@@ -236,6 +236,13 @@ def TNAfunc(path, names):
 
     print("Graph completed!")
     #printHistograms(G, authListHash2.keys(), listWithAllAppsHash.keys())
+    print("Saving graph...")
+    #save graph in disk
+    nx.write_gpickle(G, "graphs/G_COMPLETE.gpickle")
+    nx.write_gpickle(G_APP, "graphs/G_APP.gpickle")
+    #read graph from disk
+    G_from_dick = nx.read_gpickle("G_APP.gpickle")
+    print(G_from_dick)
 
 
     # print("Map to layout (takes time)...")

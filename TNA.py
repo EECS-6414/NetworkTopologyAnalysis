@@ -74,7 +74,7 @@ def TNAfunc(path, names):
             count+=1
         else:
             authListHash[aVal1] = aVal2, aVal3, aVal4
-    authListHash.pop('Boonk Gang') #bugfix (app = author)
+    #authListHash.pop('Boonk Gang') #bugfix (app = author)
     print("Repeated names of authors: "+str(count))
 
 
@@ -117,16 +117,19 @@ def TNAfunc(path, names):
                                 sentiment = 'r'
                             elif filePath['sentiment'][i]=='positive':
                                 sentiment = 'b'
-                            splitApp[j] = splitApp[j]+"!?$"+sentiment
+                            splitApp[j] = splitApp[j]+"!?$"+sentiment+str(filePath['compound'][i])
                             authListHash2[filePath['Author'][i]] = splitApp[0:len(splitApp)], idValue, idFrequency
     print("number of authors: "+str(len(authListHash2)))
 
     # Create and name graph
     G = nx.Graph()
     G.name = "Topological Network Analysis"
+    G_APP = nx.Graph()
+    G_APP.name = "Topological Network Analysis APP"
 
     # Add author list and apps list
     G.add_nodes_from(listWithAllAppsHash.keys(), type="app")
+    G_APP.add_nodes_from(listWithAllAppsHash.keys(), type="app")
     G.add_nodes_from(authListHash2.keys(), type="author")
 
     # Add edge between every author and every app they commented on
@@ -135,15 +138,39 @@ def TNAfunc(path, names):
         for k, v in listWithAllAppsHash.items():
             if str(k) in str(value[0]):
                 color = 'k'
+                compound = '0'
                 for n in range(len(value[0])):
                     if '!?$' in value[0][n] and str(k) in value[0][n]:
                         try:
                             partsWeigh = value[0][n].split("!?$")
-                            color = partsWeigh[1]
+                            color = partsWeigh[1][0:1]
+                            compound = partsWeigh[1][1:len(partsWeigh[1])]
+                            if compound == '':
+                                compound = '0'
                         except:
                             color = 'k'
-                G.add_edge(key, k, color=color)
+                G.add_edge(key, k, color=color, weight=int(float(compound)*10000))
                 listWithAllAppsHash[k] += 1
+
+    # graph with apps only
+    # for each author
+    for key_author, value in authListHash2.items():
+        for app1, valueApp2 in G[key_author].items():
+            for app2, valueApp2 in G[key_author].items():
+                factorW = 0
+                factorC = 1
+                weight1 = G[key_author][app1]["weight"]
+                weight2 = G[key_author][app2]["weight"]
+                if G_APP.has_edge(app1, app2):
+                    factorW = G_APP[app1][app2]["weight"]
+                    factorC = G_APP[app1][app2]["counter"]
+                    averageTemp = (weight1 + weight2) / 2
+                    average = (factorW*factorC + averageTemp)/(factorC+1)
+                    G_APP[app1][app2]["weight"] = int(average)
+                    G_APP[app1][app2]["counter"] = 1+factorC
+                else:
+                    average = int((weight1+weight2)/2)
+                    G_APP.add_edge(app1, app2, weight=average, counter=1)
 
 
     print("Extracting degree...")
@@ -208,7 +235,7 @@ def TNAfunc(path, names):
     colors = nx.get_edge_attributes(G, 'color').values()
 
     print("Graph completed!")
-    printHistograms(G, authListHash2.keys(), listWithAllAppsHash.keys())
+    #printHistograms(G, authListHash2.keys(), listWithAllAppsHash.keys())
 
 
     # print("Map to layout (takes time)...")
@@ -238,5 +265,9 @@ def TNAfunc(path, names):
     #     print("Reached exception when printing JPG")
 
 
-    # Return graph to call function
-    return G
+    # Return original graph
+    # return G
+
+    # Return graph for the APPs with compound score as 'weights'
+    # and n of reviews as 'counter'
+    return G_APP

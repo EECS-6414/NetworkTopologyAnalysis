@@ -74,7 +74,7 @@ def TNAfunc(path, names):
             count+=1
         else:
             authListHash[aVal1] = aVal2, aVal3, aVal4
-    #authListHash.pop('Boonk Gang') #bugfix (app = author)
+    authListHash.pop('Boonk Gang') #bugfix (app = author)
     print("Repeated names of authors: "+str(count))
 
 
@@ -219,6 +219,8 @@ def TNAfunc(path, names):
         topologyStatisticsFile.write(str(degreeOfAuthors[v])+"\n")
         print("\n"+str(degreeOfAuthors[v]))
         print(str(authListHash2[str(degreeOfAuthors[v][0])])+"\n")
+
+
     nx.set_node_attributes(G, degree_dict, 'degree')
     sorted_degree = sorted(degree_dict.items(), key=itemgetter(1), reverse=True)
     print("Top 5 nodes by degree:")

@@ -1,0 +1,58 @@
+/usr/local/bin/python3.8 /Users/jaime/Documents/York_University/Winter_2021/data_vizualization/project/github/NetworkTopologyAnalysis/main.py
+
+
+------------Processing author: Karen Barnes
+
+--> Top 5 recommendation for this Author:
+('Delivery Game', 3220.0)
+('Loop', 3215.0)
+('Radio Singapore: FM Radio + Radio Online Singapore', 3147.5)
+('The Tower', 3118.0)
+('Ninja Village', 3021.5)
+This author has: [('Karen Barnes', 'Samsung Smart Switch Mobile'), ('Karen Barnes', 'AlphaBetty Saga'), ('Karen Barnes', 'Block!'), ('Karen Barnes', 'Disney Crossy Road'), ('Karen Barnes', 'Block! Hexa Puzzle™'), ('Karen Barnes', 'Google Photos'), ('Karen Barnes', 'Candy Crush Jelly Saga'), ('Karen Barnes', 'Toca Kitchen')]
+
+
+------------Processing author: Edward Figueroa
+
+--> Top 5 recommendation for this Author:
+('MCF Return to Ravenhearst Full', 3493.875)
+('Trainyard', 3473.875)
+('The Vampire House', 3397.875)
+("Let's Create! Pottery Lite", 3397.375)
+('Backgammon Plus', 3373.875)
+This author has: [('Edward Figueroa', 'Disneyland®'), ('Edward Figueroa', 'Candy Crush Soda Saga'), ('Edward Figueroa', 'Google Photos'), ('Edward Figueroa', 'Candy Crush Jelly Saga'), ('Edward Figueroa', 'Contacts'), ('Edward Figueroa', 'Trusted Contacts'), ('Edward Figueroa', 'Candy Crush Saga'), ('Edward Figueroa', 'Google Play Movies & TV')]
+
+
+------------Processing author: Matt Arnold
+
+--> Top 5 recommendation for this Author:
+('Fashion Story: Mermaid Cove', 5925.5)
+('MCF Return to Ravenhearst Full', 3214.625)
+('Trainyard', 3194.625)
+('The Vampire House', 3118.625)
+("Let's Create! Pottery Lite", 3118.125)
+This author has: [('Matt Arnold', 'Draw Something Classic'), ('Matt Arnold', 'Disneyland®'), ('Matt Arnold', 'Block Craft 3D: Building Simulator Games For Free'), ('Matt Arnold', 'Draw Something'), ('Matt Arnold', 'Google Photos'), ('Matt Arnold', 'Papa Pear Saga'), ('Matt Arnold', 'Microsoft Office Lens - PDF Scanner'), ('Matt Arnold', 'Ringtones & Wallpapers for Me')]
+
+
+------------Processing author: Melanie Martinez
+
+--> Top 5 recommendation for this Author:
+('Ketchapp Soccer', 5236.5)
+('Delivery Game', 2911.75)
+('Loop', 2906.75)
+('Radio Singapore: FM Radio + Radio Online Singapore', 2839.25)
+('The Tower', 2809.75)
+This author has: [('Melanie Martinez', 'Video Downloader - for Instagram Repost App'), ('Melanie Martinez', 'Candy Crush Soda Saga'), ('Melanie Martinez', 'Disney Crossy Road'), ('Melanie Martinez', 'Google Photos'), ('Melanie Martinez', "My Derp - The World's Dumbest Virtual Pet"), ('Melanie Martinez', 'Candy Crush Jelly Saga'), ('Melanie Martinez', 'Google Docs'), ('Melanie Martinez', 'Adobe Photoshop Mix - Cut-out')]
+
+
+------------Processing author: Andrew Burke
+
+--> Top 5 recommendation for this Author:
+('Ice Galaxy', 2523.75)
+('Intune Managed Browser', 2469.25)
+('Bakery Story: Cats Cafe', 2343.125)
+('Radio South Africa - FM Radio', 2332.75)
+('Try Harder', 2329.625)
+This author has: [('Andrew Burke', 'Chrome Beta'), ('Andrew Burke', 'MAX Cleaner - Antivirus'), ('Andrew Burke', 'Maps - Navigate & Explore'), ('Andrew Burke', 'Draw Something'), ('Andrew Burke', 'Google Photos'), ('Andrew Burke', "My Derp - The World's Dumbest Virtual Pet"), ('Andrew Burke', 'Google Play Music'), ('Andrew Burke', 'Candy Crush Saga')]
+
+Process finished with exit code 0

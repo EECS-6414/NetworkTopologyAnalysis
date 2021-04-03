@@ -4,55 +4,85 @@
 ------------Processing author: Jesse Castillo
 
 --> Top 5 recommendation for this Author:
-('MCF Return to Ravenhearst Full', 3318.375)
-('Trainyard', 3298.375)
-('The Vampire House', 3222.375)
-("Let's Create! Pottery Lite", 3221.875)
-('Backgammon Plus', 3198.375)
+k=2 ('Jewel Match King', 5069.875)
+k=12 ('Draw Something', 4488.375)
+k=29 ('Asphalt 8: Airborne - Fun Real Car Racing Game', 4132.375)
+k=48 ('Castle Clash: Heroes of the Empire US', 3764.375)
+('The Vampire House', 6877.0)
+('Google Handwriting Input', 5260.5)
+('Jewel Match King', 5069.875)
+('Fashion Story: Daring Red', 4972.0)
+('My Virtual Pet Shop - Cute Animal Care Game', 4970.0)
 This author has: [('Jesse Castillo', 'Draw Something Classic'), ('Jesse Castillo', 'Disneyland®'), ('Jesse Castillo', 'Google Duo - High Quality Video Calls'), ('Jesse Castillo', 'Candy Crush Soda Saga'), ('Jesse Castillo', 'Draw Something'), ('Jesse Castillo', 'Castle Clash: Heroes of the Empire US'), ('Jesse Castillo', 'Asphalt 8: Airborne - Fun Real Car Racing Game'), ('Jesse Castillo', 'Jewel Match King')]
 
 
 ------------Processing author: Steve Lewis
 
 --> Top 5 recommendation for this Author:
-('Jump Car', 3045.5)
-('FM Radio Nigeria- Online Radio', 3019.0)
-('Radio Online Malaysia:  FM Radio + Radio Online', 2941.5)
-('Aralon: Forge and Flame 3d RPG', 2938.0)
-('Bubble Level PRO', 2875.5)
+k=0 ('Block! Hexa Puzzle™', 6088.1)
+k=1 ('Block!', 6058.6)
+k=4 ('Mine Quest - Crafting and Battle Dungeon RPG', 4550.6)
+k=16 ('Maps - Navigate & Explore', 3845.1)
+k=17 ('MX Player Pro', 3838.6)
+('Block! Hexa Puzzle™', 6088.1)
+('Block!', 6058.6)
+('Bubble Level PRO', 5159.0)
+('Disney Crossy Road', 4591.0)
+('Mine Quest - Crafting and Battle Dungeon RPG', 4550.6)
 This author has: [('Steve Lewis', 'Real Racing 3'), ('Steve Lewis', 'AlphaBetty Saga'), ('Steve Lewis', 'Ketchapp Winter Sports'), ('Steve Lewis', 'MX Player'), ('Steve Lewis', 'Maps - Navigate & Explore'), ('Steve Lewis', 'Block!'), ('Steve Lewis', 'Block! Hexa Puzzle™'), ('Steve Lewis', 'MX Player Pro'), ('Steve Lewis', 'Mine Quest - Crafting and Battle Dungeon RPG')]
 
 
 ------------Processing author: Pavlina Gueorgieva
 
 --> Top 5 recommendation for this Author:
-('Dragon Story™', 2829.5)
-('Make Hexa Puzzle', 2789.5)
-('Skyward', 2789.5)
-('Forest Folks - Cute Pet Home Design Game', 2678.0)
-('Fashion Story: Mermaid Cove', 2678.0)
+k=43 ('Chrome Dev', 3306.2000000000003)
+k=44 ('Chrome Dev', 3306.2)
+k=77 ('Google Sheets', 2862.2)
+k=97 ('Contacts', 2547.7)
+k=109 ('Google Docs', 2449.7)
+k=143 ('Google Play Music', 2141.2)
+('Cameringo+ Filters Camera', 6648.5)
+('Make Hexa Puzzle', 5927.5)
+('SystemPanel 2', 5764.5)
+('Hop', 5536.5)
+('Google Handwriting Input', 4856.0)
 This author has: [('Pavlina Gueorgieva', 'Google Pinyin Input'), ('Pavlina Gueorgieva', 'Chrome Beta'), ('Pavlina Gueorgieva', 'Google Duo - High Quality Video Calls'), ('Pavlina Gueorgieva', 'Google Maps Go - Directions'), ('Pavlina Gueorgieva', 'Google Photos'), ('Pavlina Gueorgieva', 'Google Play Music'), ('Pavlina Gueorgieva', 'Chrome Dev'), ('Pavlina Gueorgieva', 'Contacts'), ('Pavlina Gueorgieva', 'Google Docs'), ('Pavlina Gueorgieva', 'Google Sheets')]
 
 
 ------------Processing author: Brenda Genrich
 
 --> Top 5 recommendation for this Author:
-('BLOOD & GLORY: LEGEND', 3178.9166666666665)
-('Jumping Fish', 3091.4166666666665)
-('My Ice Cream Maker - Frozen Dessert Making Game', 3042.4166666666665)
-('Fashion Story: Young Love', 3033.4166666666665)
-('Farm Story 2: Birthday Party', 2976.0)
+k=13 ('Lollipop: Sweet Taste Match 3', 5488.916666666667)
+k=14 ('Jewel Match King', 5428.416666666667)
+k=20 ('Slot Machines by IGG', 5176.916666666667)
+k=22 ('Fruits Mania : Fairy rescue', 5028.916666666667)
+k=38 ('Google Sheets', 4324.916666666667)
+k=39 ('Google Sheets', 4324.916666666666)
+k=45 ('Google Docs', 4094.9166666666665)
+k=46 ('Google Docs', 4094.916666666666)
+('Living Legends: Frozen Beauty', 7241.5)
+('Casino Deluxe Vegas - Slots', 6622.0)
+('0-200 Squats Legs Trainer', 6472.5)
+('Fashion Story: Spring Runway', 6356.0)
+('Kitty Love - My Fluffy Pet', 6087.0)
 This author has: [('Brenda Genrich', 'Jewel Mania™'), ('Brenda Genrich', 'Fruits Mania : Elly’s travel'), ('Brenda Genrich', 'Bejeweled Blitz'), ('Brenda Genrich', 'Google Photos'), ('Brenda Genrich', 'Google Play Music'), ('Brenda Genrich', 'Slot Machines by IGG'), ('Brenda Genrich', 'Google Docs'), ('Brenda Genrich', 'Fruits Mania : Fairy rescue'), ('Brenda Genrich', 'Google Sheets'), ('Brenda Genrich', 'Lollipop: Sweet Taste Match 3'), ('Brenda Genrich', 'Jewel Match King')]
 
 
 ------------Processing author: Ronald Taylor
 
 --> Top 5 recommendation for this Author:
-('BLOOD & GLORY: LEGEND', 2920.5833333333335)
-('Stickman Downhill Motocross', 2888.6666666666665)
-('Jumping Fish', 2833.0833333333335)
-('Glory of Generals2: ACE', 2800.25)
-('My Ice Cream Maker - Frozen Dessert Making Game', 2784.0833333333335)
+k=0 ('Flashlight: LED Light', 7593.333333333333)
+k=1 ('Flashlight: LED Light', 7593.333333333332)
+k=8 ('Block! Hexa Puzzle™', 5953.333333333333)
+k=24 ('EA SPORTS UFC®', 5012.833333333333)
+k=32 ('Castle Clash: Heroes of the Empire US', 4621.333333333333)
+k=34 ('Candy Crush Saga', 4556.333333333333)
+k=42 ('Google Photos', 4390.833333333333)
+('Flashlight: LED Light', 7593.333333333333)
+('Flashlight: LED Light', 7593.333333333332)
+('Order & Chaos Duels', 6913.0)
+('Go Free', 6889.5)
+('My Virtual Pet Shop - Cute Animal Care Game', 6588.0)
 This author has: [('Ronald Taylor', 'Chess Free'), ('Ronald Taylor', 'Google Play Books - Ebooks'), ('Ronald Taylor', 'Hearts Free'), ('Ronald Taylor', 'Block!'), ('Ronald Taylor', 'Fruits Mania : Elly’s travel'), ('Ronald Taylor', 'Candy Crush Soda Saga'), ('Ronald Taylor', 'Block! Hexa Puzzle™'), ('Ronald Taylor', 'Google Photos'), ('Ronald Taylor', 'EA SPORTS UFC®'), ('Ronald Taylor', 'Castle Clash: Heroes of the Empire US'), ('Ronald Taylor', 'Candy Crush Saga'), ('Ronald Taylor', 'Flashlight: LED Light')]
 
 Process finished with exit code 0

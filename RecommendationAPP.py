@@ -29,16 +29,21 @@ def RecommendApp(author):
         # print("jaime: "+edgesSorted[k][0]+": "+str(edgesSorted[k][1]["weight"]))
         # print("\nTesting APP this author has:")
         weight = 0
+        count = 0
         for all in listAppTest:
             for k in edgesSorted:
                 if k[0] == all:
                     # print(k[0] + ": " + str(k[1]["weight"]))
                     weight += k[1]["weight"]
-        weightA = weight / len(listAppTest)
+                    count += 1
+        weightA = weight / count
         # print("average: "+str(weightA))
         # print("\nRecomendation:  ")
-        for k in range(len(edgesSorted) - 14, len(edgesSorted) - 1):
-            weight = (edgesSorted[k][1]["weight"] + weightA) / 2
+        for k in range(0, len(edgesSorted) - 1):
+            if edgesSorted[k][0] in listAppTest:
+                weight = (edgesSorted[k][1]["weight"] + weightA) / 2
+            else:
+                weight = (edgesSorted[k][1]["weight"]) / 2
             # print(edgesSorted[k][0]+": "+str(weight))
             tuple1 = (edgesSorted[k][0], weight)
             listAuthorRank.append(tuple1)
@@ -48,7 +53,7 @@ def RecommendApp(author):
     # for i in range(0, 10):
     #     print(listAuthorRank[i])
     listNewOne = []
-    for i in range(0, 13):
+    for i in range(0, len(listAuthorRank)-1):
         listNewOne.append(listAuthorRank[i])
     newListFinal = []
 
@@ -62,6 +67,9 @@ def RecommendApp(author):
 
     newListFinal.sort(reverse=True, key=myFunc)
     newListFinal = list(dict.fromkeys(newListFinal))
+    for k in range(0, len(newListFinal) - 1):
+        if newListFinal[k][0] in listAppTest:
+            print("k=" + str(k) + " " + str(newListFinal[k]))
     for i in range(0, 5):
         print(newListFinal[i])
     print("This author has: " + str(G_Complete.edges(author)))
